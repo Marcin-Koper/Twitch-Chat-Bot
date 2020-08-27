@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChatBotTwitchLib</name>
+    </assembly>
+    <members>
+        <member name="T:ChatBotTwitchLib.ChatBot">
+            <summary>
+            Bot class.
+            Conteins all bot methods for performing basic bot functions.
+            </summary>
+            <remarks>
+            This class can connect/disconnect with chat and also handles occurring events.
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Connect(System.Boolean)">
+            <summary>
+            Void method responsible for connecting, throttling chat messages and defining event handler methods.
+            </summary>
+            <param name="logging">A bool parameter which define if bot should show the logs or not.</param>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnUserTimedout(System.Object,TwitchLib.Client.Events.OnUserTimedoutArgs)">
+            <summary>
+            Event handler which is activated when event of timeouting user occur.
+            </summary>
+            <remarks>
+            When timeout occur bot will send simple message in chat.
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnWhisperReceived(System.Object,TwitchLib.Client.Events.OnWhisperReceivedArgs)">
+            <summary>
+            Event handler which is activated when event of receiving whisper by bot occur.
+            </summary>
+            <remarks>
+            When whispered bot will send simple response. 
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnConnected(System.Object,TwitchLib.Client.Events.OnConnectedArgs)">
+            <summary>
+            Event handler which is activated when event of connecting to the chat by bot occur.
+            </summary>
+            <remarks>
+            When connected bot will type both in console and also in the chat message.
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnChatCommandReceived(System.Object,TwitchLib.Client.Events.OnChatCommandReceivedArgs)">
+            <summary>
+            Event handler which is activated when event of receiving command by bot occur.
+            </summary>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnMessageReceived(System.Object,TwitchLib.Client.Events.OnMessageReceivedArgs)">
+            <summary>
+            Event handler which is activated when event of seeing message in the chat occur.
+            </summary>
+            <remarks>
+            When connected bot will type chat logs in the console.
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnConnectionError(System.Object,TwitchLib.Client.Events.OnConnectionErrorArgs)">
+            <summary>
+            Event handler which is activated when event of connection error occur.
+            </summary>
+            <remarks>
+            Bot will type all connection errors in the console
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Client_OnLog(System.Object,TwitchLib.Client.Events.OnLogArgs)">
+            <summary>
+            Event handler which is activated when event of receiving logs occur.
+            </summary>
+            <remarks>
+            Bot will type all logs in the console
+            </remarks>
+        </member>
+        <member name="M:ChatBotTwitchLib.ChatBot.Disconnect">
+            <summary>
+            Void method responsible for disconnecting with chat.
+            </summary>
+        </member>
+        <member name="T:ChatBotTwitchLib.Program">
+            <summary>
+            Main class
+            </summary>
+        </member>
+        <member name="M:ChatBotTwitchLib.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+        </member>
+        <member name="T:ChatBotTwitchLib.TwitchBotInfo">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ChatBotTwitchLib.TwitchBotInfo.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ChatBotTwitchLib.TwitchBotInfo.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ChatBotTwitchLib.TwitchBotInfo.BotToken">
+            <summary>
+              Looks up a localized string similar to 5rz0wi4csbgt03j8gs92kjkevxwi6t.
+            </summary>
+        </member>
+        <member name="P:ChatBotTwitchLib.TwitchBotInfo.ChannelName">
+            <summary>
+              Looks up a localized string similar to Wowizo23131.
+            </summary>
+        </member>
+    </members>
+</doc>
